@@ -1,0 +1,27 @@
+body {
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background-color: burlywood;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    border: 5px;
+    border-color: blueviolet;
+    border-style: solid;
+    width: 600px;
+    padding: 0 20px 20px 20px;
+}
+h1 {
+   text-shadow: 2px 2px red;
+   color: brown;
+   font-size: 96px;
+}
+.text-title {
+    display: flex;
+    justify-content: center;
+}
