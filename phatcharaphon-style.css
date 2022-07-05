@@ -6,8 +6,7 @@ body {
 .container {
     background-color: burlywood;
     box-sizing: border-box;
-    flex-direction: column;
-    display: flex;
+    display: grid;
     align-items: center;
     color: aliceblue;
     border: 5px;
@@ -15,13 +14,21 @@ body {
     border-style: solid;
     width: 600px;
     padding: 0 20px 20px 20px;
+    border-radius: 20px;
 }
 h1 {
    text-shadow: 2px 2px red;
    color: brown;
    font-size: 96px;
+   text-align: center;
 }
 .text-title {
     display: flex;
     justify-content: center;
+}
+figure {
+    text-align: center;
+}
+figure, img {
+    margin: 5px;
 }
