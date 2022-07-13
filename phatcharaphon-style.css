@@ -1,5 +1,5 @@
 body {
-    background-color: darkcyan;
+    background-color: #99ccff;
     display: flex;
     justify-content: center;
 }
@@ -10,7 +10,7 @@ body {
     align-items: center;
     color: aliceblue;
     border: 5px;
-    border-color: blueviolet;
+    border-color: black;
     border-style: solid;
     width: 600px;
     padding: 0 20px 20px 20px;
@@ -30,5 +30,16 @@ figure {
     text-align: center;
 }
 figure, img {
+    margin: 5px;
+}
+#heading {
+ color: blue;
+}
+.popular {
+    border-style: dotted;
+    border-color: red;
+    border-width: 4px;
+}
+li {
     margin: 5px;
 }
