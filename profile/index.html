@@ -1,46 +1,93 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b29f35af2c.js" crossorigin="anonymous"></script>
-    <title>resume</title>
+    <link rel="stylesheet" href="profile-style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,200;0,300;0,500;1,500&display=swap" rel="stylesheet">
+    <title>Resume</title>
 </head>
 <body>
-    <nav>
-        <img src="./profile-img/DSC_0035.JPG" alt="" width=" 200 px">
-        <div class="info">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="top-page">
+        <p>Hi,I'm Captain <br> <h1>WELCOME TO MY RESUME</h1></p>
+        
+    </div>
+    <div class="profile">
+        <div class="img-profile">
+        <img  src="./profile-img/DSC_0035.JPG" alt="Me" width=200>
+        </div>
+        <div class="box">
+            <p id="title">About me</p>
+            <p class="text">I am 3rd-year student from the faculty of computer engineering and newbie for web application developer</p>
             
-            <table>
-                <th>Personal</th>
-                <tr>
-                    <td>Name : Phatcharapon Chaisaenthao</td>
-                </tr>
-                <tr>
-                    <td>Nickname : Captain</td>
-                </tr>
-                <tr>
-                    <td>Birth of date : January 22,2001</td>
-                </tr>
-                <tr>
-                    <td>Nationality : Thai</td>
-                </tr>
-                <tr>
-                    <td>Personality : ENFJ-A</td>
-                </tr>
-            </table>
-            <div class="contact">
-                contact 
-                    <ul type="none">
-                        <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                    </ul>
+        </div>
+        <div class="box">
+            <p id="title">Profile</p>
+            <div class="text">Name : Phatcharaphon Chaisaenthao <br>Nickname : Captain<br>Date of Birth : 22 January 2001 <br>Age : 21 <br>Nationality : Thai</div>
+        </div> 
+            <div class="box">
+                <p id="title">Education</p>
+                <div class="text">
+                    <table>
+                        <tr>
+                            <td>since 2019-Now : Facuty of Engineering, Khonkaen University</td>
+                        <tr>
+                        <tr>
+                            <td>since 2017-2019 : Udonpittayanukul School</td>
+                        <tr>
+                        <tr>
+                            <td>since 2014-2016 : Mattayom Wanonniwat School</td>
+                        <tr>
+
+                    </table>
+            </div> 
             </div>
+            <div class="box">
+                <p id="title">Skill</p>
+                <div class="text">Intermediate : Firebase, HTML5, CSS, Github, Javascript
+                </div>
+                <div class="text">Beginner : Angular, Node.js
+                </div>
+            </div> 
+            <div class="box">
+                <p id="title">Soft Skill</p>
+                <div class="text">- Emotional Intelligence <br>- Collaboration  <br>- Ability to perform under pressure <br>- Adaptability <br>- Creativity</div>
+            </div>
+            <div class="box">
+                <p id="title">Experience</p>
+                <div class="text">Internship on the Zercle incubation program 2022</div>
         </div>
-        <div>
-            
+        <form class="box">
+            <p id="title">Comment</p>
+            <textarea id="comment-area" rows="4" cols="30">comement here</textarea>
+            <br>
+            <script>
+                function buttonAlert() {
+                    swal("Success", "You clicked the button!", "success");
+                }
+            </script>
+            <input type="button" value="Submit" class="form-submit-button" onclick="buttonAlert()">
+          </form> 
         </div>
-    </nav>
+    <div class="contact">contact :
+        <div class="icon">
+            <a href="https://www.facebook.com/pacharapol.chaisaentao.1">
+            <ion-icon name="logo-facebook"></ion-icon>Phatcharaphon Chaisaenthao
+          </a>
+          <br>
+          <a href="https://www.instagram.com/patcharapon.c/?hl=en">
+            <ion-icon name="logo-instagram"></ion-icon>Patcharapon.c
+          </a>
+          <div class="mail">
+            <ion-icon name="mail-outline"></ion-icon>
+              Gmail : Phatcharaphon.c@kkumail.com</div>
+          </div>
+    </div>
 </body>
 </html>

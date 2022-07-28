@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: white;
+    
+}
+body {
+    height: 100%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-image: url("/profile/profile-img/bg.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    color: white;
+    font-family: 'K2D', sans-serif;
+}
+.profile{
+    display: grid; 
+    grid-template-rows: 200px 200px;
+    grid-template-columns: auto auto;
+    gap: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.img-profile {
+    width: 200px;
+    margin-left: 100px;
+    height: 250px;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 8px solid #d2683a;
+
+   
+}
+.box {
+    position: relative;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 500px;
+    background: rgba(166, 166, 166, 0.337);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    padding: 10px
+
+
+}
+.text{
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-left: 20px;
+   
+}
+.top-page{
+    min-height: 120vh;
+    padding: 20vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
+    font-weight: bolder;
+    text-align: center;
+    background-image: url("/profile/profile-img/duck.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.top-page p {
+    font-size: 128px;
+}
+.top-page h1 {
+    font-size: 64px;
+}
+#comment-area {
+    size-adjust: auto;
+    margin-top: 10px;
+}
+.contact {
+    position: relative;
+    font-weight: bold;
+    color: #3f2a49;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: #d2683a;
+    justify-content: space-around;
+    font-size: 36px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+ 
+}
+ion-icon {
+    font-size: 28px;
+    
+}
+.icon {
+    font-size: 16px;
+}
+a {
+    color: #3f2a49;
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+ion-icon:hover {
+    color: #ffffff;
+    
+}
+
+#logo {
+    font-size: 36px;
+    color: whitesmoke;
+}
+
+#title {
+    position: relative;
+    margin-top: -10px;
+    margin-left: -10px;
+    font-size: 32px;
+    font-weight: 300;
+    background-color: #d2683a;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px 10px 10px 0px;
+}
+.form-submit-button {
+    background: #70bfff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #eee;
+    border-radius: 20px;
+    text-shadow: none;
+    padding: 10px;
+}
+
+.form-submit-button:hover {
+    background: #016ABC;
+    color: rgb(255, 255, 255);
+    border: 1px solid #eee;
+    border-radius: 20px;
+    text-shadow: none;
+}
+textarea{
+    resize: none;
+}
+@media screen and (max-width:840px){
+    .profile{
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headtext {
+        text-align: center;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .text {
+        text-align: justify;
+        display: flex;
+    }
+    .img-profile{
+        margin-left: 0%;
+    }
+    .box{
+        width: 500px;
+    }
+    .top-page{
+        min-height: 100vh;
+    }
+    body {
+        background-image: url("/profile/profile-img/bg.png");
+    }
+    .top-page h1{
+        font-size: 48px;
+    }
+    .top-page p {
+        margin-top: 250px;
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #title {
+        font-size: 24px;
+    }
+    .box {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 300px;
+    }
+    .top-page h1{
+        font-size: 24px;
+    }
+    .top-page p {
+        margin-top: 250px;
+        font-size: 48px;
+    }
+    .top-page {
+        min-height: 120vh;
+    }
+    .text{
+        font-size: 10px;
+    }
+    
+}
+   
