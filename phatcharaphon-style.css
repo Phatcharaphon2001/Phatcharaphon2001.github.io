@@ -59,6 +59,14 @@ li {
     }
   
 }
+@media  screen and (max-width: 850px) {
+    p,li,figcaption{
+        font-size: 24px;
+    }
+    h1{
+        font-size: 84px;
+    }
+}
 @media screen and (max-width: 400px) {
     .container {
         max-height: 620px;
