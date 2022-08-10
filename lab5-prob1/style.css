@@ -1,0 +1,12 @@
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+}
+p{
+    font-size: 3vw;
+    font-weight: 500;
+}
+li{
+    font-size: 2.5vw;
+}
